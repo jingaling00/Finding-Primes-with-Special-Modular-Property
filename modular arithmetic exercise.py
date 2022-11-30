@@ -11,6 +11,7 @@ two categories: those for which x*x+1 = 0 has a solution in Zp and those for whi
 it does not.
 '''
 
+""" Creating the list of primes up to 103 """
 primes = []
 for i in range(2,104):
     for j in range(2,i):
@@ -22,6 +23,7 @@ for i in range(2,104):
 primes_w_solution = {}
 primes_wo_solution = []
 
+""" Finding the primes with solutions """
 for p in primes:
     solutions = []
     for i in range(2,p):
@@ -38,6 +40,7 @@ for p in primes:
 print(primes_w_solution)
 print(primes_wo_solution)
 
+""" Printing a simple table """
 print(f'{"PRIMES":<8}|\n--------')
 
 for p in primes:
